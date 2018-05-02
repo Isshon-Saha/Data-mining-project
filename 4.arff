@@ -1,0 +1,20 @@
+@relation weather
+
+@attribute 'humidity' numeric
+@attribute 'Class' {Play, Dont}
+
+@data
+60,Play
+70,Play
+56,Play
+50,Dont
+45,Dont
+45,Dont
+56,Play
+78,Dont
+78,Play
+12,Play
+45,Play
+69,Dont
+47,Play
+23,Dont

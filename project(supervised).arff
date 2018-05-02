@@ -1,0 +1,27 @@
+@relation Shuttle_Landing_Control
+
+
+@attribute Class {noauto, auto}
+@attribute STABILITY {stab, xstab}
+@attribute ERROR {XL, LX, MM, SS}
+@attribute SIGN {pp,nn}
+@attribute WIND {head, tail}
+@attribute MAGNITUDE {Low, Medium, Strong, OutOfRange}
+@attribute VISIBILITY {yes, no}
+
+@data
+auto,stab,LX,pp,tail,Medium,no
+noauto,xstab,MM,nn,tail,Low,yes
+noauto,stab,LX,nn,head,Strong,yes
+noauto,stab,XL,pp,head,Strong,yes
+noauto,stab,MM,nn,tail,Low,yes
+noauto,xstab,XL,pp,head,OutOfRange,yes
+auto,stab,SS,nn,tail,Low,yes
+auto,stab,SS,pp,head,Medium,yes
+auto,stab,SS,pp,tail,Strong,yes
+auto,stab,MM,pp,head,Low,yes
+auto,stab,MM,pp,head,Medium,yes
+auto,stab,MM,pp,tail,Low,yes
+auto,stab,MM,pp,tail,Medium,yes
+noauto,stab,MM,pp,head,Strong,yes
+auto,stab,MM,pp,tail,Strong,yes
